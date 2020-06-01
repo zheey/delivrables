@@ -1,0 +1,92 @@
+@import "./methods.scss";
+
+@font-face {
+    font-family: Poppins-Regular ;
+    src: url("./font/poppins/Poppins-Regular.otf");
+}
+  
+@font-face {
+    font-family: Poppins-Light ;
+    src: url("./font/poppins/Poppins-Light.otf");
+}
+  
+@font-face {
+    font-family: Poppins-Medium ;
+    src: url("./font/poppins/Poppins-Medium.otf");
+}
+@font-face {
+    font-family: Poppins-SemiBold ;
+    src: url("./font/poppins/Poppins-SemiBold.otf");
+}
+@font-face {
+    font-family: Poppins-Bold ;
+    src: url("./font/poppins/Poppins-Bold.otf");
+}
+
+%flex-start{
+    @include flex(center, flex-start);
+}
+
+%flex-start-space-between{
+    @include flex(center, space-between);
+}
+
+%flex-end-center{
+    @include flex(center, flex-end);
+}
+
+%color-primary-light{
+    color:rgb(36, 56, 107);
+}
+
+%color-primary{
+    color:rgb(0, 16, 92);
+}
+
+%color-white{
+    color:rgb(255, 255, 255);
+}
+
+%color-orange{
+    color: rgb(251, 109, 58);
+}
+
+%bg-orange{
+    background: rgb(251, 109, 58);
+}
+
+%border-orange{
+    border: rgb(251, 109, 58);
+}
+
+%font-regular{
+    font-family: Poppins-Regular;
+}
+
+%font-medium{
+    font-family: Poppins-Medium;
+}
+
+%font-bold{
+    font-family: Poppins-Bold;
+}
+
+%flex-basis-60{
+    flex-basis: 60%;
+}
+
+%margin-left-50{
+    margin-left: 50px !important;
+}
+
+%no-letter-spacing{
+    letter-spacing: 0;
+}
+
+%font-54{
+    font-size: 54px;
+}
+
+%both-padding-120{
+    padding: 0 120px;
+}

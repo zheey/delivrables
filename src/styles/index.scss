@@ -1,0 +1,105 @@
+@import "./variables.scss";
+
+
+body {
+  margin: 0;
+  @extend %font-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.landing-page-wrapper{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+.navbar{
+  width: initial;
+  height: 84px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  @extend %flex-start-space-between;
+  @extend %both-padding-120;
+}
+.image{
+  width: 100px;
+  height: 100px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+.header{
+  font-size: 21px;
+  font-style: normal;
+  margin: 0;
+}
+.logo-wrapper{
+  @extend %flex-start;
+  .logo{
+    width: 30px;
+    height: 28px;
+  }
+  .logo-name{
+    font-weight: 700;
+    @extend %font-bold;
+    letter-spacing: 0.088529px;
+    @extend %color-primary-light;
+  }
+}
+.nav-menu:first-child{
+  margin-left: 0 !important;
+}
+.nav-menu{
+  @extend %color-primary;
+  @extend %no-letter-spacing;
+  @extend %margin-left-50;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu-wrapper{
+  @extend %flex-basis-60;
+  @extend %flex-end-center;
+
+}
+.button{
+  height: 40px;
+  width: 143px;
+  border-radius: 5px;
+  line-height: 24px;
+  font-size: 16px;
+  @extend %no-letter-spacing; 
+  @extend %font-medium;
+  font-weight: 500;
+}
+
+.primary-button{
+  @extend %bg-orange;
+  @extend %color-white;
+  @extend %margin-left-50;
+  @extend %border-orange;
+}
+
+.landing-header{
+  background: url("../images/bg-food4.png");
+  width: initial;
+  height: 530px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @extend %both-padding-120;
+  @extend %flex-start;
+  .header{
+    font-size: 54px;
+    width: 50%;
+    @extend %color-primary;
+    @extend %font-54;
+    line-height: 72px;
+    letter-spacing: 0;
+  }
+}
