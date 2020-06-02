@@ -13,12 +13,12 @@ code {
     monospace;
 }
 .landing-page-wrapper{
-  width: 100%;
+  @extend %width-inherit;
   height: 100%;
   min-height: 100vh;
 }
 .navbar{
-  width: initial;
+  @extend %width-inherit;
   height: 84px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   @extend %flex-start-space-between;
@@ -87,13 +87,13 @@ code {
 
 .landing-header{
   background: url("../images/bg-food4.png");
-  width: initial;
-  height: 530px;
+  @extend %width-inherit;
+  height: 446px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   @extend %both-padding-120;
-  @extend %flex-start;
+
   .header{
     font-size: 54px;
     width: 50%;
@@ -101,5 +101,56 @@ code {
     @extend %font-54;
     line-height: 72px;
     letter-spacing: 0;
+    padding-top: 135px;
+    @extend %font-semi-bold;
   }
+}
+
+.section-wrapper{
+  @extend %both-padding-120;
+  @extend %margin-top-10;
+
+  .section-menu-wrapper{
+    @extend %width-inherit;
+    @extend %flex-start-space-between;
+    @extend %margin-bottom-25;
+  }
+}
+
+.wrapper{
+  @extend %flex-end-center;
+}
+
+.scroll-nav-wrapper{
+  @extend %flex-end-center;
+
+   .scroll-nav{
+     height: 60px;
+     width: 59px;
+     border: 1px solid rgba(159, 155, 155, 0.5);
+     border-radius: 8px;
+     @extend %flex-end-center;
+   }
+   .scroll-nav:first-child{
+    @extend %margin-left-32;
+  }
+   .scroll-nav:last-child{
+     @extend %margin-left-20;
+   }
+}
+
+.menu-wrapper{
+  @extend %bg-gray;
+}
+
+.header3{
+  @extend %font-semi-bold;
+  @extend %color-primary;
+  @extend %font-32;
+}
+
+.header4{
+  @extend %font-semi-bold;
+  @extend %color-orange;
+  @extend %font-20;
 }

@@ -1,21 +1,21 @@
-export interface IImage {
+interface IClassname {
+    className?: string
+}
+
+export interface IImage extends IClassname {
     image: string,
-    alt: string,
-    className?: string
+    alt: string
 }
 
-export interface IText {
-    content: string,
-    className?: string
+export interface IText extends IClassname{
+    content: string
 }
 
-export interface IButton {
-    label: string,
-    className?: string
+export interface IButton extends IClassname{
+    label: string
 }
 
-export interface ILandingPage {
+export interface ILandingPage extends IClassname{
     image: string,
-    header: string,
-    className?: string
+    header: string
 }

@@ -55,6 +55,10 @@
     background: rgb(251, 109, 58);
 }
 
+%bg-gray {
+    background: rgb(249,250,254);
+}
+
 %border-orange{
     border: rgb(251, 109, 58);
 }
@@ -71,12 +75,32 @@
     font-family: Poppins-Bold;
 }
 
+%font-semi-bold{
+    font-family: Poppins-SemiBold;
+}
+
 %flex-basis-60{
     flex-basis: 60%;
 }
 
 %margin-left-50{
     margin-left: 50px !important;
+}
+
+%margin-left-32{
+    margin-left: 32px !important;
+}
+
+%margin-left-20{
+    margin-left: 20px !important;
+}
+
+%margin-top-10{
+    margin-top: 10px !important;
+}
+
+%margin-bottom-25{
+    margin-bottom: 25px !important;
 }
 
 %no-letter-spacing{
@@ -87,6 +111,18 @@
     font-size: 54px;
 }
 
+%font-32{
+    font-size: 32px !important;
+}
+
+%font-20 {
+    font-size: 20px !important;
+}
+
 %both-padding-120{
     padding: 0 120px;
+}
+
+%width-inherit{
+    width: inherit;
 }
