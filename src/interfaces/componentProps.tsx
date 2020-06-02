@@ -17,5 +17,8 @@ export interface IButton extends IClassname{
 
 export interface IMenuCard extends IClassname{
     cardImage: string,
-    imageAlt?: string
+    imageAlt?: string,
+    menuDescription: string,
+    menuHeader: string,
+    price: string
 }

@@ -26,12 +26,39 @@ const MenuSection: FC = () => {
                 </div>
             </div>
             <div className="menu-wrapper">
-                <MenuCard cardImage={menu}/>
-                <MenuCard cardImage={menu2} className="both-margin-30"/>
-                <MenuCard cardImage={menu3}/>
-                <MenuCard cardImage={menu4}/>
-                <MenuCard cardImage={menu5}className="both-margin-30"/>
-                <MenuCard cardImage={menu6}/>
+                <MenuCard cardImage={menu} menuDescription="Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    tour sunnd incididunt ut labor" 
+                    menuHeader="Mexican Style Lunch" 
+                    price="NGN 3,000.00"/>
+                <MenuCard 
+                cardImage={menu2} 
+                menuDescription="Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    tour sunnd incididunt ut labor" 
+                className="both-margin-30"
+                menuHeader="Mexican Style Lunch" 
+                price="NGN 3,000.00"/>
+                <MenuCard cardImage={menu3} 
+                menuDescription="Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    tour sunnd incididunt ut labor" 
+                    menuHeader="Mexican Style Lunch" 
+                    price="NGN 3,000.00"/>
+                <MenuCard cardImage={menu4} menuDescription="Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    tour sunnd incididunt ut labor" menuHeader="Mexican Style Lunch" price="NGN 3,000.00"/>
+                <MenuCard cardImage={menu5} menuDescription="Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    tour sunnd incididunt ut labor" 
+                    className="both-margin-30" 
+                    menuHeader="Mexican Style Lunch" 
+                    price="NGN 3,000.00"/>
+                <MenuCard cardImage={menu6} menuDescription="Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor 
+                    tour sunnd incididunt ut labor" 
+                    menuHeader="Mexican Style Lunch" 
+                    price="NGN 3,000.00"/>
             </div>
         </div>
     )

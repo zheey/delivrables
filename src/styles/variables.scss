@@ -55,12 +55,20 @@
     color: rgb(251, 109, 58);
 }
 
+%color-black{
+    color: rgb(3, 15, 9);
+}
+
 %bg-orange{
     background: rgb(251, 109, 58);
 }
 
 %bg-gray {
     background: rgb(249,250,254);
+}
+
+%bg-white{
+    background:rgb(255, 255, 255);
 }
 
 %border-orange{
@@ -87,6 +95,10 @@
     flex-basis: 60%;
 }
 
+%flex-basis-70{
+    flex-basis: 70%;
+}
+
 %margin-left-50{
     margin-left: 50px !important;
 }
@@ -107,6 +119,15 @@
     margin-bottom: 25px !important;
 }
 
+%margin-bottom-5{
+    margin-bottom: 5px !important;
+}
+
+%margin-bottom-30{
+    margin-bottom: 30px !important;
+}
+
+
 %no-letter-spacing{
     letter-spacing: 0;
 }
@@ -119,8 +140,24 @@
     font-size: 32px !important;
 }
 
+%font-21 {
+    font-size: 21px !important;
+}
+
 %font-20 {
     font-size: 20px !important;
+}
+
+%font-16 {
+    font-size: 16px !important;
+}
+
+%font-12 {
+    font-size: 12px !important;
+}
+
+%font-14 {
+    font-size: 14px !important;
 }
 
 %both-padding-120{

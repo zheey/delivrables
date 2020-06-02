@@ -35,10 +35,17 @@ code {
   }
 }
 .header{
-  font-size: 21px;
+  @extend %font-21;
   font-style: normal;
   margin: 0;
 }
+
+.paragraph{
+  @extend %font-12;
+  font-style: normal;
+  margin: 0;
+}
+
 .logo-wrapper{
   @extend %flex-start;
   .logo{
@@ -147,15 +154,68 @@ code {
 }
 
 .menu-card-wrapper{
+  @extend %margin-bottom-30;
   .image{
     @extend %width-380;
     height: 212px;
-    border-radius: 6px, 6px, 0, 0;
+    border-radius: 6px 6px  0 0;
+
+    img{
+      border-radius: 6px 6px 0 0;
+    }
   }
   .menu-card{
     @extend %width-380;
     width: 380px;
     height: 154px;
+    @extend %bg-white;
+    border-radius: 0 0 6px 6px;
+
+    .menu-list-tab{
+      height: 83px;
+      width: initial;
+      width: 100%;
+      border-bottom: 1px solid rgba(216, 216, 216, 0.24);
+      padding: 12px 24px;
+      overflow: hidden;
+
+      .header{
+        letter-spacing: -0.4px;
+        @extend %color-black;
+        @extend %font-semi-bold;
+        @extend %font-16;
+        @extend %margin-bottom-5;
+      }
+
+      .paragraph{
+        @extend %color-primary;
+        opacity: 0.5;
+        line-height: 18px;
+        width: 272px;
+      }
+    }
+    .price-wrapper{
+      padding: 0 24px;
+      height: 47px;
+      @extend %flex-start;
+
+      .header:first-child{
+        @extend %color-black;
+        @extend %font-14;
+        @extend %font-semi-bold;
+        height: inherit;
+        @extend %flex-basis-70;
+        @extend %flex-start;
+        border-right: 1px solid rgba(216, 216, 216, 0.24);
+      }
+      .header:last-child{
+        letter-spacing: -0.175px;
+        @extend %color-orange;
+        @extend %font-14;
+        @extend %font-semi-bold;
+        @extend %flex-center-center;
+      }
+    }
   }
 }
 

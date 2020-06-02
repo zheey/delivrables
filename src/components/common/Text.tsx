@@ -7,3 +7,9 @@ export const TextHeader:FC<IText> = ({className='', content}) => {
     )
 };
 
+export const TextPargraph:FC<IText> = ({className='', content}) => {
+    return(
+    <p className={`paragraph ${className}`}>{content}</p>
+    )
+};
+
