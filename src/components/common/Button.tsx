@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IButton } from '../interfaces/componentProps';
+import { IButton } from '../../interfaces/componentProps';
 
 export const Button: FC<IButton> = ({ className='', label }) => (
     <button className={`button ${className}`}>

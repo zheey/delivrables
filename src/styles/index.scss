@@ -62,7 +62,7 @@ code {
   font-size: 18px;
   font-weight: 400;
 }
-.menu-wrapper{
+.nav-wrapper{
   @extend %flex-basis-60;
   @extend %flex-end-center;
 
@@ -107,13 +107,13 @@ code {
 }
 
 .section-wrapper{
-  @extend %both-padding-120;
   @extend %margin-top-10;
 
   .section-menu-wrapper{
     @extend %width-inherit;
     @extend %flex-start-space-between;
     @extend %margin-bottom-25;
+    @extend %both-padding-120;
   }
 }
 
@@ -141,6 +141,22 @@ code {
 
 .menu-wrapper{
   @extend %bg-gray;
+  @extend %both-padding-120;
+  flex-wrap: wrap;
+  @extend %flex-center-center
+}
+
+.menu-card-wrapper{
+  .image{
+    @extend %width-380;
+    height: 212px;
+    border-radius: 6px, 6px, 0, 0;
+  }
+  .menu-card{
+    @extend %width-380;
+    width: 380px;
+    height: 154px;
+  }
 }
 
 .header3{
@@ -153,4 +169,8 @@ code {
   @extend %font-semi-bold;
   @extend %color-orange;
   @extend %font-20;
+}
+
+.both-margin-30{
+  @extend %both-margin-30;
 }

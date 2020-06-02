@@ -35,6 +35,10 @@
     @include flex(center, flex-end);
 }
 
+%flex-center-center{
+    @include flex(center, center);
+}
+
 %color-primary-light{
     color:rgb(36, 56, 107);
 }
@@ -123,6 +127,14 @@
     padding: 0 120px;
 }
 
+%both-margin-30{
+    margin: 0 30px;
+}
+
 %width-inherit{
     width: inherit;
+}
+
+%width-380{
+    width: 380px;
 }

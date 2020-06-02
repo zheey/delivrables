@@ -15,7 +15,7 @@ export interface IButton extends IClassname{
     label: string
 }
 
-export interface ILandingPage extends IClassname{
-    image: string,
-    header: string
+export interface IMenuCard extends IClassname{
+    cardImage: string,
+    imageAlt?: string
 }

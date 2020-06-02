@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch, BrowserRouter } from "react-router-dom";
-import ScrollToTop from './common/ScrollToTop';
-import LandingPage from './landing-page/LandingPage';
+import ScrollToTop from './components/common/ScrollToTop';
+import LandingPage from './components/landing-page/LandingPage';
 
 function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { IText } from '../interfaces/componentProps';
+import { IText } from '../../interfaces/componentProps';
 
 export const TextHeader:FC<IText> = ({className='', content}) => {
     return(
