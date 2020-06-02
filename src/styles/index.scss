@@ -35,7 +35,7 @@ code {
   }
 }
 .header{
-  @extend %font-21;
+  font-size: 21px;
   font-style: normal;
   margin: 0;
 }
@@ -174,7 +174,6 @@ code {
     .menu-list-tab{
       height: 83px;
       width: initial;
-      width: 100%;
       border-bottom: 1px solid rgba(216, 216, 216, 0.24);
       padding: 12px 24px;
       overflow: hidden;
@@ -214,6 +213,8 @@ code {
         @extend %font-14;
         @extend %font-semi-bold;
         @extend %flex-center-center;
+        @extend %height-inherit;
+        @extend %flex-basis-30;
       }
     }
   }

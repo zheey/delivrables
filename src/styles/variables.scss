@@ -99,6 +99,10 @@
     flex-basis: 70%;
 }
 
+%flex-basis-30{
+    flex-basis: 30%;
+}
+
 %margin-left-50{
     margin-left: 50px !important;
 }
@@ -133,7 +137,7 @@
 }
 
 %font-54{
-    font-size: 54px;
+    font-size: 54px !important;
 }
 
 %font-32{
@@ -174,4 +178,8 @@
 
 %width-380{
     width: 380px;
+}
+
+%height-inherit{
+    height: inherit;
 }
