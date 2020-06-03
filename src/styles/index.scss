@@ -170,6 +170,7 @@ code {
     height: 154px;
     @extend %bg-white;
     border-radius: 0 0 6px 6px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.05);
 
     .menu-list-tab{
       height: 83px;
@@ -234,4 +235,9 @@ code {
 
 .both-margin-30{
   @extend %both-margin-30;
+}
+
+.subscribe-section{
+  @extend %both-padding-100;
+  @extend %flex-center-center;
 }
