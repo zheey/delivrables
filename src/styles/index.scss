@@ -240,4 +240,76 @@ code {
 .subscribe-section{
   @extend %both-padding-100;
   @extend %flex-center-center;
+  flex-direction: column;
+  @extend %bg-gray;
+
+  .button{
+    height: 60px;
+    width: 290px;
+    @extend %color-white;
+    @extend %font-18;
+  }
+
+  .header{
+    @extend %font-44;
+    @extend %font-semi-bold;
+    @extend %color-primary;
+    line-height: 64px;
+    @extend %no-letter-spacing;
+    width: 906px;
+    @extend %text-center;
+    @extend %margin-bottom-20;
+  }
+  .paragraph{
+    @extend %color-primary;
+    @extend %font-22;
+    opacity: 0.5;
+    line-height: 30px;
+    width: 556px;
+    @extend %text-center;
+    @extend %margin-bottom-50;
+  }
+}
+
+.input-wrapper{
+  width: 263px;
+  height: 50px;
+  border-radius: 8px;
+  background: rgba(0, 12, 66, 0.05);
+  @extend %both-padding-20;
+
+  input{
+    border: none;
+    background: transparent;
+    width: inherit;
+  }
+
+  input:focus{
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .header{
+    line-height: 20px;
+    font-weight: 400;
+    @extend %color-primary;
+    @extend %font-13;
+    width: inherit;
+    @extend %text-left;
+    margin-bottom: 10px !important;
+  }
+}
+
+.left-20{
+  @extend  %margin-left-20;
+}
+
+.input-div{
+  @extend %flex-start;
+  @extend %margin-bottom-20;
+}
+
+.width-long{
+  width: 587px;
+  @extend %margin-bottom-50;
 }

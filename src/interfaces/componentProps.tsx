@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 interface IClassname {
     className?: string
 }
@@ -21,4 +23,9 @@ export interface IMenuCard extends IClassname{
     menuDescription: string,
     menuHeader: string,
     price: string
+}
+
+export interface IInputWrapper {
+    children: ReactNode,
+    className?: string
 }

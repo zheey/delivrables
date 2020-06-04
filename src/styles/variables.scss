@@ -127,10 +127,21 @@
     margin-bottom: 5px !important;
 }
 
+%margin-bottom-10{
+    margin-bottom: 10px !important;
+}
+
+%margin-bottom-20{
+    margin-bottom: 20px !important;
+}
+
 %margin-bottom-30{
     margin-bottom: 30px !important;
 }
 
+%margin-bottom-50{
+    margin-bottom: 50px !important;
+}
 
 %no-letter-spacing{
     letter-spacing: 0;
@@ -140,8 +151,16 @@
     font-size: 54px !important;
 }
 
+%font-44{
+    font-size: 44px !important;
+}
+
 %font-32{
     font-size: 32px !important;
+}
+
+%font-22 {
+    font-size: 22px !important;
 }
 
 %font-21 {
@@ -152,8 +171,16 @@
     font-size: 20px !important;
 }
 
+%font-18 {
+    font-size: 18px !important;
+}
+
 %font-16 {
     font-size: 16px !important;
+}
+
+%font-13 {
+    font-size: 13px !important;
 }
 
 %font-12 {
@@ -171,6 +198,10 @@
     padding: 100px 0;
 }
 
+%both-padding-20{
+    padding: 15px 20px;
+}
+
 %both-margin-30{
     margin: 0 30px;
 }
@@ -185,4 +216,12 @@
 
 %height-inherit{
     height: inherit;
+}
+
+%text-center{
+    text-align: center;
+}
+
+%text-left{
+    text-align: left;
 }
