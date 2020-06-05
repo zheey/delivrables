@@ -23,6 +23,10 @@ code {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   @extend %flex-start-space-between;
   @extend %both-padding-120;
+
+  .primary-button{
+    @extend %margin-left-50;
+  }
 }
 .image{
   width: 100px;
@@ -74,6 +78,9 @@ code {
   @extend %flex-end-center;
 
 }
+.button:focus{
+  outline: none;
+}
 .button{
   height: 40px;
   width: 143px;
@@ -88,8 +95,13 @@ code {
 .primary-button{
   @extend %bg-orange;
   @extend %color-white;
-  @extend %margin-left-50;
   @extend %border-orange;
+}
+
+.naked-button{
+  @extend %border-orange;
+  @extend %color-orange;
+  background: transparent;
 }
 
 .landing-header{
@@ -315,4 +327,47 @@ code {
 }
 .footer{
   height: 465px;
+  width: inherit;
+  padding: 94px 71px 10px;
+  @extend %bg-primary;
+
+  .footer-header-wrapper{
+    width: 518px;
+
+    .header{
+      @extend %font-bold;
+      @extend %font-30;
+      line-height: 50px;
+      @extend %no-letter-spacing;
+      @extend %color-white;
+    }
+    .paragraph {
+      @extend %font-20;
+      line-height: 28px;
+      opacity: 0.6;
+      @extend %color-white;
+      font-weight: 400;
+    }
+  }
+  .footer-wrapper{
+    @extend %flex-center-center;
+    @extend %margin-bottom-30;
+  }
+  .footer-button-wrapper{
+    @extend %margin-left-100;
+
+    .primary-button, .naked-button{
+      @extend %font-bold;
+      @extend %font-14;
+      line-height: 24px;
+      @extend %no-letter-spacing;
+      margin-left: 0;
+      height: 50px;
+      width: 231px;
+      text-transform: uppercase;
+    }
+    .naked-button{
+      @extend %margin-left-20;
+    }
+  }
 }

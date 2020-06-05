@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import Navbar from "../common/Navbar";
 import LandingHeader from "./LandingHeader";
 import SubscribeSection from "./SubcribeSection";
+import Footer from "./Footer";
 
 const LandingPage: FC = () => {
     return (
@@ -9,6 +10,7 @@ const LandingPage: FC = () => {
             <Navbar/>
             <LandingHeader/>
             <SubscribeSection/>
+            <Footer/>
         </div>
     )
 };

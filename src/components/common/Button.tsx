@@ -10,3 +10,7 @@ export const Button: FC<IButton> = ({ className='', label }) => (
 export const PrimaryButton:FC<IButton> = ({label , className=''}) => (
     <Button className={`primary-button ${className}`} label={label}/>
 );
+
+export const NakedButton:FC<IButton> = ({label , className=''}) => (
+    <Button className={`naked-button ${className}`} label={label}/>
+);
