@@ -326,7 +326,7 @@ code {
   @extend %margin-bottom-50;
 }
 .footer{
-  height: 465px;
+  height: 360px;
   width: inherit;
   padding: 94px 71px 10px;
   @extend %bg-primary;
@@ -368,6 +368,33 @@ code {
     }
     .naked-button{
       @extend %margin-left-20;
+    }
+  }
+  .footer-menu-wrapper{
+    height: 125px;
+    @extend %width-inherit;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 50px 79px;
+    
+    .footer-menu{
+      @extend %flex-start;
+      .header{
+        @extend %color-aliceblue;
+        @extend %font-17;
+        @extend %font-medium;
+        @extend %margin-left-30;
+        line-height: 25px;
+      }
+      .header:first-child{
+        margin-left: 0 !important;
+      }
+    }
+    hr{
+      @extend %bg-white;
+      margin: 40px 0;
+      opacity: 0.2;
+      margin: 40px 0;
+      @extend %width-inherit;
     }
   }
 }

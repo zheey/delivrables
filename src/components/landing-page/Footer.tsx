@@ -15,7 +15,15 @@ const Footer:FC = () => {
                     <NakedButton label="get in touch"/>
                 </div>
             </div>
-
+            <div className="footer-menu-wrapper">
+                <div className="footer-menu">
+                    <TextHeader content="About Us"/>
+                    <TextHeader content="Contact Us"/>
+                    <TextHeader content="Add your Resturant"/>
+                    <TextHeader content="Privacy Policy"/>
+                </div>
+                <hr/>
+            </div>
         </footer>
     )
 };
