@@ -16,6 +16,7 @@ code {
   @extend %width-inherit;
   height: 100%;
   min-height: 100vh;
+  position: relative;
 }
 .navbar{
   @extend %width-inherit;
@@ -397,4 +398,17 @@ code {
       @extend %width-inherit;
     }
   }
+}
+
+.login-wrapper{
+  @extend %box-shadow-gray; 
+  position: absolute;
+  @extend %height-100;
+  @extend %width-100;
+  @extend %top-zero;
+  @extend %black-overlay ;
+  
+}
+.login-wrapper .landing-page-wrapper{
+  height: 100vh;
 }

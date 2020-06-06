@@ -79,8 +79,16 @@
     background:rgb(0, 16, 92);
 }
 
+%black-overlay {
+    background:rgba(0, 0, 0, 0.4);
+}
+
 %border-orange{
     border: 1px solid rgb(251, 109, 58);
+}
+
+%box-shadow-gray{
+    box-shadow: 0 2px 5px 1px rgba(214, 214, 214, 0.5);
 }
 
 %font-regular{
@@ -226,6 +234,10 @@
     padding: 15px 20px;
 }
 
+%top-zero{
+    top: 0;
+}
+
 %both-margin-30{
     margin: 0 30px;
 }
@@ -234,12 +246,20 @@
     width: inherit;
 }
 
+%width-100{
+    width: 100%;
+}
+
 %width-380{
     width: 380px;
 }
 
 %height-inherit{
     height: inherit;
+}
+
+%height-100{
+    height: 100%;
 }
 
 %text-center{
