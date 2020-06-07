@@ -71,6 +71,7 @@ code {
   @extend %color-primary;
   @extend %no-letter-spacing;
   @extend %margin-left-50;
+  @extend %cursor-pointer;
   font-size: 18px;
   font-weight: 400;
 }
@@ -141,22 +142,22 @@ code {
   @extend %flex-end-center;
 }
 
+.scroll-nav{
+  height: 60px;
+  width: 59px;
+  border: 1px solid rgba(159, 155, 155, 0.5);
+  border-radius: 8px;
+  @extend %flex-end-center;
+}
+.scroll-nav:first-child{
+ @extend %margin-left-32;
+}
+.scroll-nav:last-child{
+  @extend %margin-left-20;
+}
+
 .scroll-nav-wrapper{
   @extend %flex-end-center;
-
-   .scroll-nav{
-     height: 60px;
-     width: 59px;
-     border: 1px solid rgba(159, 155, 155, 0.5);
-     border-radius: 8px;
-     @extend %flex-end-center;
-   }
-   .scroll-nav:first-child{
-    @extend %margin-left-32;
-  }
-   .scroll-nav:last-child{
-     @extend %margin-left-20;
-   }
 }
 
 .menu-wrapper{
@@ -407,8 +408,36 @@ code {
   @extend %width-100;
   @extend %top-zero;
   @extend %black-overlay ;
-  
+  @extend %flex-end-center;
 }
-.login-wrapper .landing-page-wrapper{
+.vh-sized{
   height: 100vh;
+  overflow: hidden;
+}
+
+.login-card{
+  @extend %height-inherit;
+  @extend %width-720;
+  @extend %bg-white;
+  @extend %box-shadow-gray;
+  @extend %both-padding-40;
+  @extend %box-sizing-box;
+
+  .login-form-wrapper{
+    @extend %flex-center-center;
+  }
+
+  .scroll-nav{
+    margin-left: 0 !important;
+    @extend %margin-bottom-60;
+  }
+
+  .header{
+    @extend %font-medium;
+    @extend %font-26;
+    @extend %color-primary;
+    line-height: 32px;
+    @extend %no-letter-spacing;
+    @extend %font-weight-500;
+  }
 }

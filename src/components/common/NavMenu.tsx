@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { TextHeader } from "./Text";
-import { IText } from "../../interfaces/componentProps";
+import { IText, IClick } from "../../interfaces/componentProps";
 
-const NavMenu:FC<IText> = ({content, className=''}) => {
+const NavMenu:FC<IText & IClick> = ({content, className='', onClick=() => {}}) => {
     return(
-        <TextHeader content={content} className={`nav-menu ${className}`}/>
+        <TextHeader content={content} className={`nav-menu ${className}`} onClick={onClick}/>
     )
 };
 

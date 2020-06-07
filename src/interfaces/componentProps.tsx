@@ -29,3 +29,11 @@ export interface IInputWrapper {
     children: ReactNode,
     className?: string
 }
+
+export interface INavbar {
+    onLoginClick: (event: React.MouseEvent) => void
+}
+
+export interface IClick {
+    onClick?: (event: React.MouseEvent) => void
+}

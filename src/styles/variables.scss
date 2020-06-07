@@ -167,6 +167,10 @@
     margin-bottom: 50px !important;
 }
 
+%margin-bottom-60{
+    margin-bottom: 60px !important;
+}
+
 %no-letter-spacing{
     letter-spacing: 0;
 }
@@ -185,6 +189,10 @@
 
 %font-30{
     font-size: 30px !important;
+}
+
+%font-26{
+    font-size: 26px !important;
 }
 
 %font-22 {
@@ -223,6 +231,10 @@
     font-size: 14px !important;
 }
 
+%font-weight-500{
+    font-weight: 500;
+}
+
 %both-padding-120{
     padding: 0 120px;
 }
@@ -232,6 +244,10 @@
 
 %both-padding-20{
     padding: 15px 20px;
+}
+
+%both-padding-40{
+    padding: 40px;
 }
 
 %top-zero{
@@ -254,6 +270,10 @@
     width: 380px;
 }
 
+%width-720{
+    width: 720px;
+}
+
 %height-inherit{
     height: inherit;
 }
@@ -268,4 +288,12 @@
 
 %text-left{
     text-align: left;
+}
+
+%cursor-pointer {
+    cursor: pointer;
+}
+
+%box-sizing-box{
+    box-sizing: border-box;
 }
