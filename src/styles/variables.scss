@@ -47,6 +47,10 @@
     color:rgb(0, 16, 92);
 }
 
+%color-royal-blue{
+    color: rgb(20, 107, 255);
+}
+
 %color-white{
     color:rgb(255, 255, 255);
 }
@@ -79,12 +83,24 @@
     background:rgb(0, 16, 92);
 }
 
+%bg-transparent{
+    background: transparent;
+}
+
 %black-overlay {
     background:rgba(0, 0, 0, 0.4);
 }
 
 %border-orange{
     border: 1px solid rgb(251, 109, 58);
+}
+
+%border-gray{
+    border: 1px solid rgb(224, 224, 224);
+}
+
+%border-royal-blue{
+    border: 1px solid rgb(20, 107, 255);
 }
 
 %box-shadow-gray{
@@ -159,8 +175,16 @@
     margin-bottom: 20px !important;
 }
 
+%margin-bottom-26{
+    margin-bottom: 26px !important;
+}
+
 %margin-bottom-30{
     margin-bottom: 30px !important;
+}
+
+%margin-bottom-44{
+    margin-bottom: 44px !important;
 }
 
 %margin-bottom-50{
@@ -235,6 +259,10 @@
     font-weight: 500;
 }
 
+%font-weight-400{
+    font-weight: 400;
+}
+
 %both-padding-120{
     padding: 0 120px;
 }
@@ -244,6 +272,10 @@
 
 %both-padding-20{
     padding: 15px 20px;
+}
+
+%both-margin-24{
+    margin: 24px 0;
 }
 
 %both-padding-40{

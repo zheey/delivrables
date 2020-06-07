@@ -295,7 +295,7 @@ code {
   input{
     border: none;
     background: transparent;
-    width: inherit;
+    width: -webkit-fill-available;
   }
 
   input:focus{
@@ -308,7 +308,7 @@ code {
     font-weight: 400;
     @extend %color-primary;
     @extend %font-13;
-    width: inherit;
+    width: -webkit-fill-available;
     @extend %text-left;
     margin-bottom: 10px !important;
   }
@@ -404,14 +404,14 @@ code {
 .login-wrapper{
   @extend %box-shadow-gray; 
   position: absolute;
-  @extend %height-100;
+  height: 1024px;
   @extend %width-100;
   @extend %top-zero;
   @extend %black-overlay ;
   @extend %flex-end-center;
 }
 .vh-sized{
-  height: 100vh;
+  height: 1024px;
   overflow: hidden;
 }
 
@@ -425,6 +425,7 @@ code {
 
   .login-form-wrapper{
     @extend %flex-center-center;
+    flex-direction: column;
   }
 
   .scroll-nav{
@@ -439,5 +440,39 @@ code {
     line-height: 32px;
     @extend %no-letter-spacing;
     @extend %font-weight-500;
+    @extend %margin-bottom-20;
   }
+
+  .paragraph{
+    @extend %color-primary;
+    opacity: 0.5;
+    @extend %font-18;
+    line-height: 23px;
+    @extend %no-letter-spacing;
+    @extend %font-weight-400;
+    @extend %margin-bottom-44;
+  }
+  .naked-button{
+    @extend %border-royal-blue;
+    @extend %color-royal-blue;
+    width: 380px;
+    height: 60px;
+  }
+  .small-text{
+    @extend %both-margin-24;
+  }
+  .input-wrapper{
+    height: 80px;
+    width: 380px;
+    @extend %border-gray;
+    @extend %bg-transparent;
+    @extend %box-sizing-box;
+    .header{
+    line-height: 15px !important;
+    }
+  }
+}
+
+.mb-26{
+  @extend %margin-bottom-26;
 }
