@@ -47,8 +47,12 @@
     color:rgb(0, 16, 92);
 }
 
+%color-navy-blue {
+    color: rgb(78, 93, 120) !important;
+}
+
 %color-royal-blue{
-    color: rgb(20, 107, 255);
+    color: rgb(20, 107, 255)!important;
 }
 
 %color-white{
@@ -56,7 +60,7 @@
 }
 
 %color-orange{
-    color: rgb(251, 109, 58);
+    color: rgb(251, 109, 58)!important;
 }
 
 %color-black{
@@ -151,6 +155,10 @@
     margin-left: 20px !important;
 }
 
+%margin-left-12{
+    margin-left: 12px !important;
+}
+
 %margin-left-100{
     margin-left: 100px !important;
 }
@@ -193,6 +201,10 @@
 
 %margin-bottom-60{
     margin-bottom: 60px !important;
+}
+
+%no-margin-bottom{
+    margin-bottom: 0 !important;
 }
 
 %no-letter-spacing{
@@ -275,7 +287,7 @@
 }
 
 %both-margin-24{
-    margin: 24px 0;
+    margin: 24px 0!important;
 }
 
 %both-padding-40{
@@ -314,6 +326,14 @@
     height: 100%;
 }
 
+%height-60{
+    height: 60px;
+}
+
+%height-80{
+    height: 80px;
+}
+
 %text-center{
     text-align: center;
 }
@@ -328,4 +348,8 @@
 
 %box-sizing-box{
     box-sizing: border-box;
+}
+
+%opacity-1{
+    opacity: 1 !important;
 }

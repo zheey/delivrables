@@ -8,7 +8,7 @@ import { ILandingState } from "../../interfaces/componentsStates";
 
 const LandingPage: FC = () => {
     const [landingPageState, setLandingPage] = useState<ILandingState>({
-        showLoginDrawer: true
+        showLoginDrawer: false
     });
 
     const toogleLoginModal: () => void = () => {
@@ -26,7 +26,7 @@ const LandingPage: FC = () => {
             <Footer/>
             {
                 landingPageState.showLoginDrawer ? 
-                    <Login/>
+                    <Login onClick={toogleLoginModal}/>
                     :
                     ''
             }

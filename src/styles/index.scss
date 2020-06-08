@@ -148,6 +148,7 @@ code {
   border: 1px solid rgba(159, 155, 155, 0.5);
   border-radius: 8px;
   @extend %flex-end-center;
+  @extend %cursor-pointer;
 }
 .scroll-nav:first-child{
  @extend %margin-left-32;
@@ -455,15 +456,23 @@ code {
   .naked-button{
     @extend %border-royal-blue;
     @extend %color-royal-blue;
-    width: 380px;
-    height: 60px;
+    @extend %width-380;
+    @extend %height-60;
   }
+
+  .primary-button{
+    @extend %width-380;
+    @extend %height-60;
+    @extend %margin-bottom-50;
+  }
+
   .small-text{
     @extend %both-margin-24;
+    @extend %font-16;
   }
   .input-wrapper{
-    height: 80px;
-    width: 380px;
+    @extend %height-80;
+    @extend %width-380;
     @extend %border-gray;
     @extend %bg-transparent;
     @extend %box-sizing-box;
@@ -471,8 +480,57 @@ code {
     line-height: 15px !important;
     }
   }
+  .checkbox-wrapper{
+    @extend %flex-start;
+    .paragraph{
+      @extend %font-14;
+      @extend %font-regular;
+      @extend %color-navy-blue;
+      @extend %font-weight-400;
+      @extend %opacity-1;
+      @extend %margin-left-12;
+      @extend %no-margin-bottom;
+    }
+  }
+  .forgot-parag{
+    @extend %font-14;
+    @extend %font-regular;
+    @extend %color-orange;
+    @extend %font-weight-400;
+    @extend %no-margin-bottom;
+    @extend %opacity-1;
+  }
 }
 
 .mb-26{
   @extend %margin-bottom-26;
+}
+
+.mb-30{
+  @extend %margin-bottom-30;
+}
+
+.extra-wrapper{
+  @extend %flex-start-space-between;
+  @extend %width-380;
+  @extend %margin-bottom-50;
+}
+
+.signup-text{
+  @extend %flex-center-center;
+  .paragraph{
+    @extend %font-18;
+    @extend %font-medium;
+    @extend %font-weight-500;
+    @extend %opacity-1;
+  }
+  .paragraph:last-child{
+    @extend %margin-left-12;
+  }
+}
+.navy-blue{
+  @extend %color-navy-blue;
+}
+.orange{
+  @extend %color-orange;
 }

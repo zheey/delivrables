@@ -1,13 +1,14 @@
 import React, { FC } from "react";
 import { TextHeader, TextPargraph } from "../common/Text";
-import { NakedButton } from "../common/Button";
+import { NakedButton, PrimaryButton } from "../common/Button";
 import InputWrapper from "../common/InputWrapper";
+import { IClick } from "../../interfaces/componentProps";
 
-const Login:FC = () => {
+const Login:FC<IClick> = ({ onClick=() => {} }) => {
     return(
         <div className="login-wrapper">
             <div className="login-card">
-                <div className="scroll-nav">    
+                <div className="scroll-nav" onClick={e => {onClick(e)}}>    
                 </div>
                 <div className="login-form-wrapper">
                     <TextHeader content="Welcome Back!"/>
@@ -18,10 +19,22 @@ const Login:FC = () => {
                         <TextHeader content="Your Email"/>
                         <input placeholder="assuranceuwanguezz@gmail.com" type="text"/>
                     </InputWrapper>
-                    <InputWrapper>
+                    <InputWrapper className="mb-30">
                         <TextHeader content="Your password"/>
                         <input placeholder="assuranceuwanguezz@gmail.com" type="password"/>
                     </InputWrapper>
+                    <div className="extra-wrapper">
+                        <div className="checkbox-wrapper">
+                            <input type="checkbox"/>
+                            <TextPargraph content="Remeber me"/>
+                        </div>
+                        <TextPargraph content="Forgot Password?" className="forgot-parag"/>
+                    </div>
+                    <PrimaryButton label="Sign In"/>
+                    <div className="signup-text">
+                        <TextPargraph content="Don’t have an account?" className="navy-blue"/>
+                        <TextPargraph content="Register Now" className="orange"/>
+                    </div>
                 </div>
             </div>
         </div>
