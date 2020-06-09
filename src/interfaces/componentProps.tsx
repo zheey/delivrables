@@ -37,3 +37,8 @@ export interface INavbar {
 export interface IClick {
     onClick?: (event: React.MouseEvent) => void
 }
+
+export interface IComponent {
+    children: ReactNode,
+    className?: string
+}

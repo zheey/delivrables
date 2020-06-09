@@ -3,13 +3,11 @@ import { TextHeader, TextPargraph } from "../common/Text";
 import { NakedButton, PrimaryButton } from "../common/Button";
 import InputWrapper from "../common/InputWrapper";
 import { IClick } from "../../interfaces/componentProps";
+import DrawerWrapper from "../common/DrawerWrapper";
 
 const Login:FC<IClick> = ({ onClick=() => {} }) => {
     return(
-        <div className="login-wrapper">
-            <div className="login-card">
-                <div className="scroll-nav" onClick={e => {onClick(e)}}>    
-                </div>
+        <DrawerWrapper onClick={onClick}>
                 <div className="login-form-wrapper">
                     <TextHeader content="Welcome Back!"/>
                     <TextPargraph content="Enter your details to login to your account"/>
@@ -36,8 +34,7 @@ const Login:FC<IClick> = ({ onClick=() => {} }) => {
                         <TextPargraph content="Register Now" className="orange"/>
                     </div>
                 </div>
-            </div>
-        </div>
+        </DrawerWrapper>
     )
 };
 
