@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import { TextHeader, TextPargraph } from "../common/Text";
 import { NakedButton, PrimaryButton } from "../common/Button";
 import InputWrapper from "../common/InputWrapper";
-import { IClick } from "../../interfaces/componentProps";
+import { ILogin } from "../../interfaces/componentProps";
 import DrawerWrapper from "../common/DrawerWrapper";
 
-const Login:FC<IClick> = ({ onClick=() => {} }) => {
+const Login:FC<ILogin> = ({ onClick=() => {}, onSignUp=() => {} }) => {
     return(
         <DrawerWrapper onClick={onClick}>
                 <div className="login-form-wrapper">
@@ -31,7 +31,7 @@ const Login:FC<IClick> = ({ onClick=() => {} }) => {
                     <PrimaryButton label="Sign In"/>
                     <div className="signup-text">
                         <TextPargraph content="Don’t have an account?" className="navy-blue"/>
-                        <TextPargraph content="Register Now" className="orange"/>
+                        <TextPargraph content="Register Now" className="orange" onClick={onSignUp}/>
                     </div>
                 </div>
         </DrawerWrapper>

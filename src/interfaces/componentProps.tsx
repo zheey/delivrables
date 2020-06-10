@@ -14,7 +14,8 @@ export interface IText extends IClassname{
 }
 
 export interface IButton extends IClassname{
-    label: string
+    label: string,
+    onClick?: (event: React.MouseEvent) => void
 }
 
 export interface IMenuCard extends IClassname{
@@ -31,11 +32,20 @@ export interface IInputWrapper {
 }
 
 export interface INavbar {
-    onLoginClick: (event: React.MouseEvent) => void
+    onLoginClick: (event: React.MouseEvent) => void,
+    onSignupClick: (event: React.MouseEvent) => void
 }
 
 export interface IClick {
     onClick?: (event: React.MouseEvent) => void
+}
+
+export interface ILogin extends IClick{
+    onSignUp: (event: React.MouseEvent) => void
+}
+
+export interface ISignup extends IClick{
+    onLogin: (event: React.MouseEvent) => void
 }
 
 export interface IComponent {

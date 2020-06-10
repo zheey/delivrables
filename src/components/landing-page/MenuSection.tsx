@@ -36,7 +36,6 @@ const MenuSection: FC = () => {
                 menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
-                className="both-margin-30"
                 menuHeader="Mexican Style Lunch" 
                 price="NGN 3,000.00"/>
                 <MenuCard cardImage={menu3} 
@@ -51,7 +50,6 @@ const MenuSection: FC = () => {
                 <MenuCard cardImage={menu5} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
-                    className="both-margin-30" 
                     menuHeader="Mexican Style Lunch" 
                     price="NGN 3,000.00"/>
                 <MenuCard cardImage={menu6} menuDescription="Lorem ipsum dolor sit amet, 

@@ -1,3 +1,4 @@
 export interface ILandingState {
-    showLoginDrawer: Boolean
+    showLoginDrawer: Boolean,
+    showSignupDrawer: Boolean
 }

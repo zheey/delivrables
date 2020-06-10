@@ -7,9 +7,9 @@ export const TextHeader:FC<IText & IClick> = ({className='', content, onClick=()
     )
 };
 
-export const TextPargraph:FC<IText> = ({className='', content}) => {
+export const TextPargraph:FC<IText & IClick> = ({className='', content, onClick=()=>{}}) => {
     return(
-    <p className={`paragraph ${className}`}>{content}</p>
+    <p className={`paragraph ${className}`} onClick={e => onClick(e)}>{content}</p>
     )
 };
 

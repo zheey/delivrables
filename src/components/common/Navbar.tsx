@@ -7,7 +7,7 @@ import { PrimaryButton } from './Button';
 import { INavbar } from '../../interfaces/componentProps';
 
 
-const Navbar: FC<INavbar> = ({ onLoginClick }) => {
+const Navbar: FC<INavbar> = ({ onLoginClick, onSignupClick }) => {
     return(
         <div className="navbar">
             <div className="logo-wrapper">
@@ -17,7 +17,7 @@ const Navbar: FC<INavbar> = ({ onLoginClick }) => {
             <div className="nav-wrapper">
                 <NavMenu content="Cart (0)"/>
                 <NavMenu content="Log In" onClick={onLoginClick}/>
-                <PrimaryButton label="Get Started"/>
+                <PrimaryButton label="Get Started" onClick={onSignupClick}/>
             </div>
         </div>
     )

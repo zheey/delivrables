@@ -92,6 +92,7 @@ code {
   @extend %no-letter-spacing; 
   @extend %font-medium;
   font-weight: 500;
+  @extend %cursor-pointer;
 }
 
 .primary-button{
@@ -165,7 +166,7 @@ code {
   @extend %bg-gray;
   @extend %both-padding-120;
   flex-wrap: wrap;
-  @extend %flex-center-center
+  @extend %flex-start-space-between;
 }
 
 .menu-card-wrapper{
@@ -510,6 +511,14 @@ code {
   @extend %margin-bottom-30;
 }
 
+.mb-50{
+  @extend %margin-bottom-50;
+}
+
+.mb-60{
+  @extend %margin-bottom-60;
+}
+
 .extra-wrapper{
   @extend %flex-start-space-between;
   @extend %width-380;
@@ -526,6 +535,7 @@ code {
   }
   .paragraph:last-child{
     @extend %margin-left-12;
+    @extend %cursor-pointer;
   }
 }
 .navy-blue{
