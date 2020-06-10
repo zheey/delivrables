@@ -9,12 +9,16 @@ import menu5 from "../../images/food4.png";
 import menu6 from "../../images/food7.png";
 
 const MenuSection: FC = () => {
+    const viewAllMenu = () => {
+        window.location.href = "/all-menu"
+    };
+
     return(
         <div className="section-wrapper">
             <div className="section-menu-wrapper">
                 <TextHeader content="Food delivery in Lagos Island" className="header3"/>
                 <div className="wrapper">
-                    <TextHeader content="View all" className="header4"/>
+                    <TextHeader content="View all" className="header4" onClick={viewAllMenu}/>
                     <div className="scroll-nav-wrapper">
                         <div className="scroll-nav">
 

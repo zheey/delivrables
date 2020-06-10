@@ -1,54 +1,12 @@
-import React, { FC, useState } from "react";
-import Navbar from "../common/Navbar";
+import React, { FC } from "react";
 import LandingHeader from "./LandingHeader";
-import SubscribeSection from "./SubcribeSection";
-import Footer from "./Footer";
-import Login from "../login/Login";
-import { ILandingState } from "../../interfaces/componentsStates";
-import SignUp from "../login/SignUp";
+import LandingPageWrapper from "../common/LandingPageWrapper";
 
 const LandingPage: FC = () => {
-    const [landingPageState, setLandingPage] = useState<ILandingState>({
-        showLoginDrawer: false,
-        showSignupDrawer: false
-    });
-
-    const toogleLoginModal: () => void = () => {
-        setLandingPage(prevState => ({
-            ...prevState,
-            showSignupDrawer: false,
-            showLoginDrawer: !prevState.showLoginDrawer
-        }));
-    };
-
-    const toogleSignupModal: () => void = () => {
-        setLandingPage(prevState => ({
-            ...prevState,
-            showLoginDrawer: false,
-            showSignupDrawer: !prevState.showSignupDrawer
-        }));
-    };
-
-    const showDrawer = landingPageState.showLoginDrawer || landingPageState.showSignupDrawer;
     return (
-        <div className={`landing-page-wrapper ${showDrawer ? "vh-sized" : ''}`}>
-            <Navbar onLoginClick={toogleLoginModal} onSignupClick={toogleSignupModal}/>
+        <LandingPageWrapper>
             <LandingHeader/>
-            <SubscribeSection/>
-            <Footer/>
-            {
-                landingPageState.showLoginDrawer ? 
-                    <Login onClick={toogleLoginModal} onSignUp={toogleSignupModal}/>
-                    :
-                    ''
-            }
-            {
-                landingPageState.showSignupDrawer ? 
-                    <SignUp onClick={toogleSignupModal} onLogin={toogleLoginModal}/>
-                    :
-                    ''
-            }
-        </div>
+        </LandingPageWrapper>
     )
 };
 

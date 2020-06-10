@@ -52,3 +52,7 @@ export interface IComponent {
     children: ReactNode,
     className?: string
 }
+
+export interface ILandingPageWrapper{
+    children: ReactNode
+}
