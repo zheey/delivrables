@@ -56,3 +56,11 @@ export interface IComponent {
 export interface ILandingPageWrapper{
     children: ReactNode
 }
+
+export interface IMenuWrapper {
+    children: ReactNode,
+    showNavigation?: boolean, 
+    headerSubText?: string, 
+    headerText: string,
+    className?: string
+}

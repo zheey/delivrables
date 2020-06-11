@@ -166,7 +166,14 @@ code {
   @extend %bg-gray;
   @extend %both-padding-120;
   flex-wrap: wrap;
-  @extend %flex-start-space-between;
+  @extend %flex-start;
+
+  .menu-card-wrapper{
+    @extend %margin-right-25;
+  }
+  .menu-card-wrapper:nth-child(3n), .menu-card-wrapper:last-child{
+    margin-right: 0 !important;
+  }
 }
 
 .menu-card-wrapper{
@@ -247,6 +254,7 @@ code {
   @extend %font-semi-bold;
   @extend %color-orange;
   @extend %font-20;
+  @extend %cursor-pointer;
 }
 
 .both-margin-30{
@@ -543,4 +551,13 @@ code {
 }
 .orange{
   @extend %color-orange;
+}
+.new-mwnu-section{
+  padding: 40px 0 60px;
+  @extend %bg-gray;
+  margin-top: 0 !important;
+}
+.popular-menu{
+  @extend %bg-gray;
+  margin-top: 0 !important;
 }
