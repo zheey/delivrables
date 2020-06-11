@@ -13,7 +13,7 @@ const FoodMenuWrapper:FC<IMenuWrapper> = ({ children, showNavigation=false, head
                 <TextHeader content={headerText} className="header3"/>
                 {
                     headerSubText ?
-                        <TextPargraph content={headerSubText}/>
+                        <TextPargraph content={headerSubText} className="light-blue"/>
                         :
                         ''
                 }

@@ -561,3 +561,7 @@ code {
   @extend %bg-gray;
   margin-top: 0 !important;
 }
+.light-blue{
+  @extend %color-primary;
+  opacity: 0.5;
+}

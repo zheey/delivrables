@@ -10,7 +10,9 @@ import FoodMenuWrapper from '../common/FoodMenuWrapper';
 
 const PopularMenu: FC = () => {
     return(
-        <FoodMenuWrapper headerText="Food delivery in Lagos Island" className="popular-menu">
+        <FoodMenuWrapper headerText="Popular Resturants in Lagos Island" 
+                         className="popular-menu" 
+                         headerSubText="Powered by top resturants in Ikoyi">
             <MenuCard cardImage={menu} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
