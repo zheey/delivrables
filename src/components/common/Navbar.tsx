@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import logo from "../../images/logo.png";
 import location from "../../images/location.png";
+import search from "../../images/search.png";
+import cart from "../../images/cart.png";
 import ImageWrapper from './ImageWrapper';
 import { TextHeader } from "./Text"
 import NavMenu from './NavMenu';
@@ -36,6 +38,14 @@ const Navbar: FC<INavbar> = ({ onLoginClick, onSignupClick }) => {
                                 <ImageWrapper image={location} alt="location"/>
                                 <input placeholder="Type a location"/>
                             </div>
+                        </div>
+                        <div className="nav-wrapper">
+                            <div className="icon-nav">
+                                <ImageWrapper image={search} alt="search"/>
+                                <NavMenu content="Search"/>
+                            </div>
+                            <NavMenu content="Log In" onClick={onLoginClick}/>
+                            <ImageWrapper image={cart} alt="cart"/>
                         </div>
                     </>
             }

@@ -594,3 +594,13 @@ code {
 .logo-search-wrapper{
   @extend %flex-start-end;
 }
+.icon-nav{
+  @extend %flex-start;
+  .image{
+    width: 18px;
+    height: 18px;
+  }
+  .nav-menu{
+    @extend %margin-left-8;
+  }
+}
