@@ -565,3 +565,32 @@ code {
   @extend %color-primary;
   opacity: 0.5;
 }
+.search-wrapper{
+  width: 295px;
+  border: none;
+  border-bottom: 1px solid rgb(0, 16, 92);
+  @extend %margin-left-50;
+  @extend %flex-start-end;
+
+  .image{
+    width: 16px;
+    height: 20px;
+  }
+  input{
+    width: 243px;
+    height: 25px;
+    @extend %font-medium;
+    @extend %font-18;
+    @extend %color-primary;
+    @extend %no-letter-spacing;
+    @extend %margin-left-8;
+    border: none;
+  }
+  input:focus{
+    border: none;
+    outline: none;
+  }
+}
+.logo-search-wrapper{
+  @extend %flex-start-end;
+}
