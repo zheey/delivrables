@@ -604,3 +604,9 @@ code {
     @extend %margin-left-8;
   }
 }
+
+.cart{
+  height: 20px;
+  width: 18px;
+  @extend %margin-left-50;
+}

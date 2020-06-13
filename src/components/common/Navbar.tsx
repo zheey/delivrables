@@ -45,7 +45,7 @@ const Navbar: FC<INavbar> = ({ onLoginClick, onSignupClick }) => {
                                 <NavMenu content="Search"/>
                             </div>
                             <NavMenu content="Log In" onClick={onLoginClick}/>
-                            <ImageWrapper image={cart} alt="cart"/>
+                            <ImageWrapper image={cart} alt="cart" className="cart"/>
                         </div>
                     </>
             }
