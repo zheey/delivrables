@@ -7,8 +7,9 @@ import menu4 from "../../images/food5.png";
 import menu5 from "../../images/food4.png";
 import menu6 from "../../images/food7.png";
 import FoodMenuWrapper from '../common/FoodMenuWrapper';
+import { IMenu } from '../../interfaces/componentProps';
 
-const PopularMenu: FC = () => {
+const PopularMenu: FC<IMenu> = ({ toogleMenuDetails }) => {
     return(
         <FoodMenuWrapper headerText="Popular Resturants in Lagos Island" 
                          className="popular-menu" 
@@ -17,47 +18,58 @@ const PopularMenu: FC = () => {
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
                     menuHeader="Mexican Style Lunch" 
-                    price="NGN 3,000.00"/>
-                <MenuCard 
-                cardImage={menu2} 
-                menuDescription="Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor 
-                    tour sunnd incididunt ut labor" 
-                menuHeader="Mexican Style Lunch" 
-                price="NGN 3,000.00"/>
+                    price="NGN 3,000.00" toogleMenuDetails={toogleMenuDetails}/>
+                <MenuCard cardImage={menu2} 
+                          menuDescription="Lorem ipsum dolor sit amet, 
+                                consectetur adipiscing elit, sed do eiusmod tempor 
+                                tour sunnd incididunt ut labor" 
+                          menuHeader="Mexican Style Lunch" 
+                          price="NGN 3,000.00"
+                          toogleMenuDetails={toogleMenuDetails}/>
                 <MenuCard cardImage={menu3} 
                 menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
                     menuHeader="Mexican Style Lunch" 
-                    price="NGN 3,000.00"/>
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
                 <MenuCard cardImage={menu4} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
-                    tour sunnd incididunt ut labor" menuHeader="Mexican Style Lunch" price="NGN 3,000.00"/>
+                    tour sunnd incididunt ut labor" 
+                    menuHeader="Mexican Style Lunch" 
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
                 <MenuCard cardImage={menu5} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
                     menuHeader="Mexican Style Lunch" 
-                    price="NGN 3,000.00"/>
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
                 <MenuCard cardImage={menu6} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
                     menuHeader="Mexican Style Lunch" 
-                    price="NGN 3,000.00"/>
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
                     <MenuCard cardImage={menu3} 
                 menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
                     menuHeader="Mexican Style Lunch" 
-                    price="NGN 3,000.00"/>
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
                 <MenuCard cardImage={menu4} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
-                    tour sunnd incididunt ut labor" menuHeader="Mexican Style Lunch" price="NGN 3,000.00"/>
+                    tour sunnd incididunt ut labor" 
+                    menuHeader="Mexican Style Lunch" 
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
                 <MenuCard cardImage={menu5} menuDescription="Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, sed do eiusmod tempor 
                     tour sunnd incididunt ut labor" 
                     menuHeader="Mexican Style Lunch" 
-                    price="NGN 3,000.00"/>
+                    price="NGN 3,000.00"
+                    toogleMenuDetails={toogleMenuDetails}/>
         </FoodMenuWrapper>
     )
 };

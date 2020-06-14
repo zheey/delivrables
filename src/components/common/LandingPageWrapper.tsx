@@ -10,8 +10,15 @@ import { ILandingPageWrapper } from "../../interfaces/componentProps";
 const LandingPageWrapper: FC<ILandingPageWrapper> = ({ children }) => {
     const [landingPageState, setLandingPage] = useState<ILandingState>({
         showLoginDrawer: false,
-        showSignupDrawer: false
+        showSignupDrawer: false,
+        showMenu: true
     });
+    const toogleMenuDetails = () => {
+        setLandingPage(prevState => ({
+            ...prevState,
+            showMenu: !prevState.showMenu
+        }));
+    }
 
     const toogleLoginModal: () => void = () => {
         setLandingPage(prevState => ({

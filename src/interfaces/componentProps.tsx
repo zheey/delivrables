@@ -23,7 +23,8 @@ export interface IMenuCard extends IClassname{
     imageAlt?: string,
     menuDescription: string,
     menuHeader: string,
-    price: string
+    price: string,
+    toogleMenuDetails: (event: React.MouseEvent) => void
 }
 
 export interface IInputWrapper {
@@ -63,4 +64,8 @@ export interface IMenuWrapper {
     headerSubText?: string, 
     headerText: string,
     className?: string
+}
+
+export interface IMenu {
+    toogleMenuDetails: (event: React.MouseEvent) => void
 }

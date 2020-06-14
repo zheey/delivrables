@@ -3,7 +3,7 @@ import ImageWrapper from "./ImageWrapper";
 import { IMenuCard } from '../../interfaces/componentProps';
 import { TextHeader , TextPargraph} from './Text';
 
-const MenuCard: FC<IMenuCard> = ({ cardImage, imageAlt="menu", className='', menuDescription='', menuHeader, price }) => {
+const MenuCard: FC<IMenuCard> = ({ cardImage, imageAlt="menu", className='', menuDescription='', menuHeader, price, toogleMenuDetails }) => {
     return(
         <div className={`menu-card-wrapper ${className}`}>
             <ImageWrapper image={cardImage} alt={imageAlt}/>
@@ -14,7 +14,7 @@ const MenuCard: FC<IMenuCard> = ({ cardImage, imageAlt="menu", className='', men
                 </div>
                 <div className="price-wrapper">
                     <TextHeader content={price}/>
-                    <TextHeader content="Order Now"/>
+                    <TextHeader content="Order Now" onClick={toogleMenuDetails}/>
                 </div>
             </div>
         </div>

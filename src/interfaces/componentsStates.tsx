@@ -1,4 +1,9 @@
 export interface ILandingState {
-    showLoginDrawer: Boolean,
-    showSignupDrawer: Boolean
+    showLoginDrawer: boolean,
+    showSignupDrawer: boolean,
+    showMenu: boolean
+}
+
+export interface IAllMenu {
+    showMenu: boolean
 }
