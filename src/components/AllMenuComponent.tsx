@@ -3,22 +3,18 @@ import LandingPageWrapper from "./common/LandingPageWrapper";
 import RecentMenu from "./common/RecentMenu";
 import PopularMenu from "./common/PopularMenu";
 import { IAllMenu } from "../interfaces/componentsStates";
+import { IMenu } from "../interfaces/componentProps";
 
-const AllMenuComponent: FC = () => {
+const AllMenuComponent: FC<IMenu> = ({ toogleMenuDetails }) => {
     const [menuState, setMenuState] = useState<IAllMenu>({
         showMenu: false
     });
 
-    const toogleMenuDetails = () => {
-        setMenuState(prevState => ({
-            ...prevState,
-            showMenu: !prevState.showMenu
-        }));
-    }
+    
     return (
         <LandingPageWrapper>
-            <RecentMenu/>
-            <PopularMenu/>
+            <RecentMenu toogleMenuDetails={toogleMenuDetails}/>
+            <PopularMenu toogleMenuDetails={toogleMenuDetails}/>
         </LandingPageWrapper>
     )
 };
