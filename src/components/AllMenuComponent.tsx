@@ -6,10 +6,6 @@ import { IAllMenu } from "../interfaces/componentsStates";
 import { IMenu } from "../interfaces/componentProps";
 
 const AllMenuComponent: FC<IMenu> = ({ toogleMenuDetails }) => {
-    const [menuState, setMenuState] = useState<IAllMenu>({
-        showMenu: false
-    });
-
     
     return (
         <LandingPageWrapper>
