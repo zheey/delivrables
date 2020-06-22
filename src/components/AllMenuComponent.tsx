@@ -24,7 +24,7 @@ const AllMenuComponent: FC<IMenu> = () => {
                 {
                 menuPageState.showMenu ?
                     <div className="login-wrapper overlay-wrapper">
-                        <div>
+                        <div className="menu-details-card">
 
                         </div>
                     </div>

@@ -414,7 +414,7 @@ code {
 .login-wrapper{
   @extend %box-shadow-gray; 
   position: absolute;
-  height: 1024px;
+  @extend %height-1024;
   @extend %width-100;
   @extend %top-zero;
   @extend %black-overlay ;
@@ -614,4 +614,15 @@ code {
 .overlay-wrapper{
   @extend %flex-center-center;
   @extend %height-100;
+  align-items: flex-start !important;
+  padding: 170px 0;
+  @extend %box-sizing-box;
+
+  .menu-details-card{
+    @extend %height-1024;
+    @extend %width-720;
+    @extend %bg-white;
+    @extend %box-shadow-gray;
+    @extend %box-sizing-box;
+  }
 }
