@@ -613,4 +613,5 @@ code {
 
 .overlay-wrapper{
   @extend %flex-center-center;
+  @extend %height-100;
 }

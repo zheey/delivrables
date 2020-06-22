@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, ReactChild, ReactElement } from "react";
 
 interface IClassname {
     className?: string

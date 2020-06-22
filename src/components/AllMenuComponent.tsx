@@ -5,13 +5,35 @@ import PopularMenu from "./common/PopularMenu";
 import { IAllMenu } from "../interfaces/componentsStates";
 import { IMenu } from "../interfaces/componentProps";
 
-const AllMenuComponent: FC<IMenu> = ({ toogleMenuDetails }) => {
+const AllMenuComponent: FC<IMenu> = () => {
+    const [menuPageState, setMenuPage] = useState<IAllMenu>({
+        showMenu: true
+    });
+    const toogleMenuDetails = () => {
+        setMenuPage(prevState => ({
+            ...prevState,
+            showMenu: !prevState.showMenu
+        }));
+    }
     
     return (
-        <LandingPageWrapper>
-            <RecentMenu toogleMenuDetails={toogleMenuDetails}/>
-            <PopularMenu toogleMenuDetails={toogleMenuDetails}/>
-        </LandingPageWrapper>
+        <>
+            <LandingPageWrapper>
+                <RecentMenu toogleMenuDetails={toogleMenuDetails}/>
+                <PopularMenu toogleMenuDetails={toogleMenuDetails}/>
+                {
+                menuPageState.showMenu ?
+                    <div className="login-wrapper overlay-wrapper">
+                        <div>
+
+                        </div>
+                    </div>
+                    :
+                    ''
+            }
+            </LandingPageWrapper>
+            
+        </>
     )
 };
 
