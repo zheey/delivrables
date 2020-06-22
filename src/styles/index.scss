@@ -624,5 +624,60 @@ code {
     @extend %bg-white;
     @extend %box-shadow-gray;
     @extend %box-sizing-box;
+
+    .image{
+      height: 371px;
+      @extend %width-inherit;
+      img{
+        object-position: center;
+        object-fit: fill;
+      }
+    }
+    .menu-text-wrapper{
+      padding: 40px 32px 22px;
+      .header{
+        @extend %no-letter-spacing;
+        @extend %color-primary;
+        @extend %font-semi-bold;
+        @extend %font-24;
+        line-height: 32px;
+        @extend %font-weight-500;
+        margin-bottom: 14px !important;
+      }
+
+      .paragraph{
+        @extend %color-primary;
+        opacity: 0.5;
+        line-height: 28px;
+        @extend %font-weight-400;
+        @extend %font-16;
+      }
+    }
+    .sub-header{
+      @extend %bg-light-gray;
+      @extend %height-74;
+      @extend %box-sizing-box;
+      padding: 0 32px;
+      @extend %flex-center-start;
+      flex-direction: column;
+
+      .header{
+        @extend %no-letter-spacing;
+        @extend %color-primary;
+        @extend %font-semi-bold;
+        @extend %font-20;
+        line-height: 26px;
+        @extend %font-weight-500;
+        @extend %margin-bottom-5;
+      }
+
+      .paragraph{
+        @extend %color-primary;
+        opacity: 0.7;
+        line-height: 16px;
+        @extend %font-weight-400;
+        @extend %font-14;
+      }
+    }
   }
 }

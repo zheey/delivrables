@@ -23,6 +23,10 @@
     src: url("./font/poppins/Poppins-Bold.otf");
 }
 
+%flex-center-start{
+    @include flex(flex-start, center);
+}
+
 %flex-start{
     @include flex(center, flex-start);
 }
@@ -81,6 +85,10 @@
 
 %bg-gray {
     background: rgb(249,250,254);
+}
+
+%bg-light-gray{
+    background: rgba(216, 216, 216, 0.29);
 }
 
 %bg-white{
@@ -207,6 +215,10 @@
     margin-bottom: 30px !important;
 }
 
+%margin-bottom-40{
+    margin-bottom: 40px !important;
+}
+
 %margin-bottom-44{
     margin-bottom: 44px !important;
 }
@@ -245,6 +257,10 @@
 
 %font-26{
     font-size: 26px !important;
+}
+
+%font-24 {
+    font-size: 24px !important;
 }
 
 %font-22 {
@@ -344,6 +360,10 @@
 
 %height-1024{
     height: 1024px;
+}
+
+%height-74{
+    height: 74px;
 }
 
 %height-60{
