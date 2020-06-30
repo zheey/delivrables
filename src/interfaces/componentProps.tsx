@@ -1,6 +1,6 @@
 import { ReactNode, ReactChild, ReactElement } from "react";
 
-interface IClassname {
+export interface IClassname {
     className?: string
 }
 

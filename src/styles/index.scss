@@ -660,6 +660,7 @@ code {
       padding: 0 32px;
       @extend %flex-center-start;
       flex-direction: column;
+      margin-bottom: 20px;
 
       .header{
         @extend %no-letter-spacing;
@@ -684,4 +685,38 @@ code {
 .circle{
   height: 30px;
   width: 30px;
+  border-radius: 50%;
+}
+.nav-circle-blue{
+  @extend %bg-dark-blue;
+  @extend %color-alice-blue;
+}
+.nav-circle-light{
+  @extend %bg-alice-blue;
+  @extend %color-dark-blue;
+}
+.menu-add-nav{
+  padding: 40px 32px 22px;
+  @extend %flex-start;
+  margin-bottom: 20px;
+
+  .header{
+    @extend %no-letter-spacing;
+    @extend %color-primary;
+    @extend %font-semi-bold;
+    @extend %font-16;
+    line-height: 26px;
+    @extend %font-weight-500;
+    margin: 0 12px;
+  }
+  .number{
+    letter-spacing: -0.21px !important;
+    @extend %font-regular;
+    font-weight: 400px !important;
+    @extend %font-18;
+  }
+
+}
+.side-margin-30{
+  margin:  0 30px;
 }

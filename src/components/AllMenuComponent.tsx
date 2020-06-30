@@ -7,6 +7,7 @@ import { IMenu } from "../interfaces/componentProps";
 import ImageWrapper from "./common/ImageWrapper";
 import imageDetails from "../images/menuDetails.png";
 import { TextHeader, TextPargraph } from "./common/Text";
+import Circle from "./common/Circle";
 
 const AllMenuComponent: FC<IMenu> = () => {
     const [menuPageState, setMenuPage] = useState<IAllMenu>({
@@ -36,6 +37,42 @@ const AllMenuComponent: FC<IMenu> = () => {
                             <div className="sub-header">
                                 <TextHeader content="Add-ons"/>
                                 <TextPargraph content="Add some stuff to spice up your meal"/>
+                            </div>
+                            <div className="side-margin-30">
+                            <div className="menu-add-nav">
+                                <Circle className="nav-circle-blue">
+
+                                </Circle>
+                                <TextHeader content="1" className="number"/>
+                                <Circle className="nav-circle-light">
+                                    
+                                </Circle>
+                                <TextHeader content="Latte"/>
+                            </div>
+                            <div className="menu-add-nav">
+                               <Circle className="nav-circle-light">
+                                    
+                                </Circle>
+                                <TextHeader content="Extra Egg"/>
+                            </div>
+                            <div className="menu-add-nav">
+                               <Circle className="nav-circle-light">
+                                    
+                                </Circle>
+                                <TextHeader content="White Americano"/>
+                            </div>
+                            <div className="menu-add-nav">
+                               <Circle className="nav-circle-light">
+                                    
+                                </Circle>
+                                <TextHeader content="Chocolate Twist"/>
+                            </div>
+                            <div className="menu-add-nav">
+                               <Circle className="nav-circle-light">
+                                    
+                                </Circle>
+                                <TextHeader content="Lemon Muffin"/>
+                            </div>
                             </div>
                         </div>
                     </div>
