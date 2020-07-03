@@ -624,6 +624,7 @@ code {
     @extend %bg-white;
     @extend %box-shadow-gray;
     @extend %box-sizing-box;
+    position: relative;
 
     .image{
       height: 371px;
@@ -696,7 +697,6 @@ code {
   @extend %color-dark-blue;
 }
 .menu-add-nav{
-  padding: 40px 32px 22px;
   @extend %flex-start;
   margin-bottom: 20px;
 
@@ -720,3 +720,35 @@ code {
 .side-margin-30{
   margin:  0 30px;
 }
+.counter-wrapper{
+  @extend %flex-start-space-between;
+  @extend %width-100;
+  .wrap-counter{
+    @extend %flex-start;
+  }
+  .amount{
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    @extend %font-regular;
+  }
+}
+.height-17{
+  height: 17px !important;
+}
+.main-add-nav{
+  .button{
+    height: 60px !important;
+    width: 485px !important;
+    border-radius: 4px !important;
+  }
+}
+
+.close-button{
+  position: absolute;
+  top: 34px;
+  height: 40px;
+  width: 40px;
+  background: white;
+  left: 33px;
+}
+

@@ -1,4 +1,5 @@
 import { ReactNode, ReactChild, ReactElement } from "react";
+import { number } from "prop-types";
 
 export interface IClassname {
     className?: string
@@ -10,7 +11,7 @@ export interface IImage extends IClassname {
 }
 
 export interface IText extends IClassname{
-    content: string
+    content?: string | number
 }
 
 export interface IButton extends IClassname{
@@ -68,4 +69,19 @@ export interface IMenuWrapper {
 
 export interface IMenu {
     toogleMenuDetails: (event: React.MouseEvent) => void
+}
+export interface IMenuCounter {
+    menuTitle?: string,
+    counter?: number,
+    showFull?: boolean,
+    isMainMenu?: boolean
+}
+
+export interface IMenuDetailsOverlay {
+    toogleMenuDetails: (event: React.MouseEvent) => void
+}
+
+export interface ICircle {
+    onClick?: (event: React.MouseEvent) => void,
+    className?: string
 }
